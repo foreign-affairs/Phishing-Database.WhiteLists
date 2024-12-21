@@ -71,9 +71,7 @@ body:
     attributes:
       label: Related external source
       description: |
-        Please let us know how you found your domain or IP listed in the 
-        Phishing Database if not listed above. (IF link, Only one link per 
-        line.)
+        Please let us know how you found your domain or IP listed in the Phishing Database if not listed above. (IF link, Only one link per line.)
       placeholder: |
         We got contacted by a visitor that be are using your filters, and then could not contact our domain
         
