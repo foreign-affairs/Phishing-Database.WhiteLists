@@ -1,0 +1,109 @@
+name: False Positive Report
+description: File a False positive report
+labels: ["False Positive"]
+assignees:
+  - spirillen
+  - g0d33p3rsec
+  - mitchellkrogza
+  - funilrys
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We understand being listed on a Phishing Database like this can be frustrating and embarrassing for many web site owners.
+
+        The first step is to remain calm.
+        
+        The second step is to rest assured one of our maintainers will address your issue as soon as possible.
+
+        Please make sure you have provided as much information and details as possible to help speed up the processing of your whitelisting application.
+        
+        Leaving any of the fields empty can lead to, the issue are closed 
+        without any further comment. Please read our README.
+
+  - type: textarea
+    id: record
+    attributes:
+      label: Domain/URL/IP you believe is NOT to be Phishing
+      description: |
+        Please give us a list of FQDN (domains) or complete links (URI's) that you believe to be false positives.
+        
+        Please warn with "NSFW" where applicable.
+      placeholder: |
+        example.com
+        https://example.org/phishing
+        192.0.2.0/24
+      render: CSS
+    validations:
+      required: true
+
+  - type: dropdown
+    id: recordtype
+    validations:
+      required: true
+    attributes:
+      label: Whitelist type
+      description: How do you believe the domain or uri should be whitelisted? More help can be found in the [README](https://github.com/Phishing-Database/phishing#false-positives)
+      multiple: false
+      options:
+        - '`1 to 1` match'
+        - '`ALL` subdomains'
+        - '`RZD` or `REGEX` all sub- and top level domains matching given record(s)'
+
+  - type: dropdown
+    id: source
+    validations:
+      required: true
+    attributes:
+      label: More Information
+      description: |
+        How did you discover your IP-address or domain was listed in the Phishing or Phishing.Database?
+      multiple: true
+      options:
+        - Customer
+        - OpenPhish
+        - Phishtank
+        - VirusTotal
+        - Other (Please fill out the next box)
+
+  - type: textarea
+    id: ifOther
+    attributes:
+      label: Related external source
+      description: |
+        Please let us know how you found your domain or IP listed in the 
+        Phishing Database if not listed above. (IF link, Only one link per 
+        line.)
+      placeholder: |
+        We got contacted by a visitor that be are using your filters, and then could not contact our domain
+        
+        https://example.com
+        https://example.net
+        https://example.org
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: Screenshot
+    attributes:
+      label: Screenshot
+      description: |
+        If you feel a screenshot can say more than the words on 1000 hard drives, do please feel free to add it here :smiley:
+
+        **INFO** There need to be at least one blank line before and after the image line
+      value: |
+        <details><summary>Screenshot, Phishing site</summary>
+        
+        
+        </details>
+    validations:
+      required: false
+
+  - type: textarea
+    validations:
+      required: false
+    attributes:
+      label: Additional context
+      value: Add any other context about the problem here.
+      render: Text

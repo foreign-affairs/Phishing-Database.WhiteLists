@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report Phishing
+    url: https://github.com/Phishing-Database/phishing/issues/new?assignees=&labels=&projects=&template=01-phishing.yml?title=
+    about: Reporting a phishing domain or URI
