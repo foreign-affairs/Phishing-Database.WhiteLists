@@ -1,0 +1,4 @@
+REG ^.*\.falix\.gg.*$
+REG ^ia\d+\.us\.archive\.org$
+RZD frau-z-macht-das.de
+RZD vodafone.de
