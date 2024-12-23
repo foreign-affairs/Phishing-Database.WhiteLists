@@ -1,3 +1,5 @@
+Archived because of https://github.com/Phishing-Database/Phishing.Database/issues/955#issuecomment-2559277794
+
 # Alpha release note
 
 This whitelist repo is thought to match the following issues and disquisitions
