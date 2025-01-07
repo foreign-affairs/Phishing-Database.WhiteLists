@@ -6,6 +6,7 @@ This whitelist repo is thought to match the following issues and disquisitions
 
 - https://github.com/Phishing-Database/dev-center/issues/10
 - https://github.com/Phishing-Database/dev-center/discussions/9
+- https://github.com/orgs/Phishing-Database/discussions/4
 
 The folder/files are structured to meat the rule handling of [tivilsta]
 (https://github.com/funilrys/tivilsta) the significantly enhanced version of
@@ -18,6 +19,10 @@ its python related version [whitelist](https://github.com/Ultimate-Hosts-Blackli
   mechanism below
 - `regex.lst` This is for the REG+RZD rules. Even though we could help keeping
   the files smaller by separating these in two and use the `--reg` and
-  `--rzd` flags, the in the reality, we would add more load to the repo
+  `--rzd` flags, then in the reality, we would add more load to the repo
   system by doing this, as the number of records are very few. See mechanism
   below
+
+## See mechanism below
+
+https://github.com/funilrys/tivilsta?tab=readme-ov-file#the-flags
